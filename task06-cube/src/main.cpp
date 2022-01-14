@@ -74,7 +74,7 @@ int main() {
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);  // 使用核心模式(无需向后兼容性)
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);            // 如果使用的是Mac OS X系统，需加上这行
-	glfwWindowHint(GLFW_RESIZABLE, FALSE);						    // 不可改变窗口大小
+	glfwWindowHint(GLFW_RESIZABLE, false);						    // 不可改变窗口大小
 
 																	// 创建窗口(宽、高、窗口名称)
 	auto window = glfwCreateWindow(screen_width, screen_height, "Cube", nullptr, nullptr);
